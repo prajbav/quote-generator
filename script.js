@@ -41,5 +41,12 @@ function fbPost(){
     window.open(fbUrl, '_blank');
 }
 
+function tweetQuote(){
+    const tweetUrl = `https://twitter.com/intent/tweet?text=${quoteText.textContent}-${authorText.textContent}`
+    window.open(tweetUrl, '_blank');
+
+}
+
 newQuoteBtn.addEventListener('click', newQuote);
-fbBtn.addEventListener('click',fbPost);
+//fbBtn.addEventListener('click',fbPost);
+twitterBtn.addEventListener('click',tweetQuote);
